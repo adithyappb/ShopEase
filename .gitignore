@@ -1,0 +1,11 @@
+.gradle/
+build/
+out/
+*.iml
+.idea/
+*.apk
+*.keystore
+*.swp
+
+# Only once the CI/CD is done
+.github/workflows/

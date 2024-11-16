@@ -1,0 +1,24 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath "com.android.tools.build:gradle:8.0.0"  // Ensure the correct version for Android Gradle Plugin
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.10"  // Kotlin Plugin
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:2.5.3"  // Navigation Safe Args
+        classpath "com.google.dagger:hilt-android-gradle-plugin:2.43"  // Hilt Dependency Injection
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
